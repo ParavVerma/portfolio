@@ -53,6 +53,31 @@ theme.
   outline: none !important;
 }
 
+.intro, .services-content-block, .works, .work-with-us, .footer {
+  z-index: 10000;
+}
+
+.navbar {
+  z-index: 100000!important;
+}
+
+
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom: 30px;;
+	right: 0px;
+	background-color:#01f7b6;
+	color:#FFF;
+	/* border-radius:20px; */
+	text-align:center;
+  font-size:32px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -237,7 +262,7 @@ section {
 .preloader .inner {
   margin: 0;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -286,7 +311,7 @@ section {
   background: #01f7b6;
   left: 0;
   bottom: 0;
-  z-index: 15;
+  z-index: 10;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -301,7 +326,7 @@ section {
   position: absolute;
   bottom: 0;
   background: #000;
-  z-index: 2;
+  z-index: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -333,49 +358,6 @@ section {
   height: 100%;
 }
 
-/* EQUALIZER */
-.equalizer {
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.equalizer span {
-  background: #01f7b6;
-  width: 1px;
-  height: 1px;
-  top: 50%;
-  bottom: 0;
-  left: 0%;
-  transform: translateY(-50%);
-  position: absolute;
-  transition: height 0.2s linear;
-}
-
-.equalizer span:nth-child(1) {
-  margin-left: 4px;
-}
-
-.equalizer span:nth-child(2) {
-  margin-left: 8px;
-}
-
-.equalizer span:nth-child(4) {
-  margin-left: 12px;
-}
-
-.equalizer span:nth-child(5) {
-  margin-left: 16px;
-}
-
-.equalizer span:nth-child(6) {
-  margin-left: 20px;
-}
-
-.equalizer.paused span {
-  height: 1px !important;
-}
-
 /* NAVIGATION MENU */
 .navigation-menu {
   width: 100%;
@@ -388,7 +370,7 @@ section {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 9;
+  z-index: 10000;
   visibility: hidden;
 }
 .navigation-menu .bg-layers {
